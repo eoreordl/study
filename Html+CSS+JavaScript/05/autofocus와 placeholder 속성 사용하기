@@ -5,6 +5,8 @@
     <title>이거지</title>
   </head>
   <body>
+    <fieldset>
+      <legend><b>배송 정보</b></legend>
     <label for="user-name">이름</label>
     <input type="text" id="user-name" autofocus>
     <label for="user-addr">배송 주소</label>
@@ -15,5 +17,6 @@
     <input type="tel" id="user-phone" placeholder="하이픈 빼고 입력해주세요.(ex. 01012345678)">
     <label for="arr-date">배송 지정</label>
     <input type="date" id="arr-date">(주문일로부터 최소 3일 이후)
+    </fieldset>
   </body>
 </html>
