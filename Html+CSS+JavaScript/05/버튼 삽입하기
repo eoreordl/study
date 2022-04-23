@@ -1,0 +1,11 @@
+ <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>이거지</title>
+  </head>
+  <body>
+    <button type="submit">주문하기</button>
+    <button type="submit">취소하기</button>
+  </body>
+</html>
