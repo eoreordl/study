@@ -1,0 +1,32 @@
+이것도 다시한번 풀어보자
+
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>연습문제 2</title>
+    <style>
+      .web {
+        color: white;
+        text-shadow: 3px 2px 5px black;
+      }
+
+			.container { 
+        width:300px;
+        height:70px;     
+        margin:0 auto;
+        background-color:#444;        
+      }    
+      h1 {
+        text-align: center;
+        line-height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="web">웹 개발 기초</h1>
+    </div>
+  </body>
+</html>
