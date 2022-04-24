@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 폰트 사용하기</title>
+    <style>
+      @font-face {
+        font-family: 'Ostrich';  /* 폰트 이름 */
+        src: local('Ostrich Sans'), 
+              url('fonts/ostrich-sans-bold.woff') format('woff'), 
+              url('fonts/ostrich-sans-bold.ttf') format('truetype'), 
+              url('fonts/ostrich-sans-bold.svg') format('svg');
+      }
+      .web_font {
+        font-family:'Ostrich', sans-serif; /* 웹 폰트 지정 */
+      }
+      p {
+        font-size:30px; /* 글자 크기 */
+      }
+    </style>
+</head>
+<body>
+  <p>Using Default Fonts</p>
+  <p class="web_font">Using Web Fonts</p>
+</body>
+</html>
+
+
+웹 폰트도 css폴더에 들어있어야 실행되더라.....
