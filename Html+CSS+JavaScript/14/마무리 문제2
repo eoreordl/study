@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+	<style>
+		body {
+			font-size:1.2em;
+			text-align:center;
+		}
+		p {
+			color: #f00;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h2>3의 배수 찾기</h2>
+	<script src="js/test.js"></script>
+</body>
+</html>
+
+
+
+________________     js     ___________________
+
+var userNumber = parseInt(prompt("몇 까지 3의 배수를 찾을 까요?", "50"));
+var i;
+var count = 0;
+
+    if(userNumber !== null) {
+        for(i = 1; i <= userNumber; i++) {
+            if(i % 3 === 0) {
+                count++;
+                document.write(i + ", ");
+        }
+    }
+        document.write("<p>" + userNumber + "까지 3의 배수의 갯수 : " + count + "</p>");
+}
+    else {
+        alert("숫자를 입력하지 않았습니다.");
+}
