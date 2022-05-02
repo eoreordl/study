@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 1</title>
+</head>
+<body>
+  <script>
+	  var x = 0;
+	  var y = 0;
+
+	  x = prompt("1번째 숫자를 입력하세요.");
+	  y = prompt("2번째 숫자를 입력하세요.");
+		sumMulti(x,y);
+	  function sumMulti(x,y) {
+		if(x === y) {
+			let Xsum = x * y;
+			return Xsum;
+			document.write("두 수의 숫자가 같으므로 두 수를 곱해서 " + x + "X" + y + "=" + Xsum);
+		} 	
+		else {
+			let sum = x + y;
+			return sum;
+			document.write("두 수의 숫자가 다르므로 두 수를 더해서 " + x + "+" + y + "=" + sum);
+		}
+	}
+  </script>
+</body>
+</html>
