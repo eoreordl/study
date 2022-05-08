@@ -43,4 +43,3 @@ function showSlides() {
     setTimeout(showSlides, 2000);                   //2초마다 showSlides() 함수를 반복 실행
 }
 */
-
