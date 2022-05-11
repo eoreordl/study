@@ -1,33 +1,56 @@
-object는 property를 가진 데이터를 저장해주며, { } 를 사용한다.
+html ----------------------------------------------------
 
-const player = {
-name : tomato,
-color : red,
-food : true,
-};
 
-console.log(player);
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="login-form">
+        <input 
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+        >
+        <input type="submit" value="Log is"
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <script src="js/app.js"></script>
+</body>
+</html>
 
-property를 불러오는 방법은 2가지가 있다.
 
-1. console.log(player.name); => tomato
-2. console.log(player["name"]); => tomato
+css ---------------------------------------------------------
 
-또한 property를 바꾸는 것은 가능하지만 선언된 object를 바꾸는 것은 불가능하다.
-ex)
-const player = {
-name : tomato,
-color : red,
-food : true,
-};
 
-console.log(player);
-player.color = "blue";
-console.log(player.color);
---> blue
+.hidden {
+    display: none;
+}
 
-그리고 property를 추가 할 수도 있다.
 
-player.koreanName = "토마토";
 
---> {name: "tomato", color: "blue", food: true, koreaName: "토마토"}
+js -----------------------------------------------------
+
+
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
+
+const HIDDEN_CLASSNAME = "hidden";
+
+function onLoginSubmit(event) {
+    event.preventDefault(); 
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    localStorage.setItem("username", username);
+    greeting.innerText = `Hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
