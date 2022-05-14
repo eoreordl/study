@@ -1,16 +1,13 @@
-const clock = document.querySelector("#clock");
+const clock = document.querySelector("h2#clock");
 
 function getClock() {
-    const date = new Date();
-    const nowHours = String(date.getHours()).padStart(2, "0");
-    const nowMinute = String(date.getMinutes()).padStart(2, "0");
-    const nowSeconds = String(date.getSeconds()).padStart(2, "0");
-    clock.innerText = `${nowHours}:${nowMinute}:${nowSeconds}`;
+  const date = new Date();
+  const hours = String(date.getHours()).padStart(2,"0");
+  const minutes = String(date.getMinutes()).padStart(2,"0");
+  const seconds = String(date.getSeconds()).padStart(2,"0");
 
-    
+  clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-
-
 getClock();
-setInterval(getClock, 1000);
+setInterval(getClock,1000);
